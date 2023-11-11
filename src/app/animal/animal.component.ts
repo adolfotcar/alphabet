@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class AnimalComponent implements OnInit {
 
   public isPressing: boolean = false;
-  //by default we start in A, if different route we trat in the Init
+  //by default we start in A, if different route we trat in the onInit
   public charCode: number = 65; 
   //object containing the charcodes of each letter as keys and the animal names as values, used to retrieve animal names
   private animalChars: any = { 65: 'antelope', 66: 'bear', 67: 'cow', 68: 'dog', 69: 'elephant', 70: 'frog', 71: 'giraffe', 
