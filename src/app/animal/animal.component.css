@@ -1,0 +1,28 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 220px;
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.key-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.key {
+  width: 15%;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

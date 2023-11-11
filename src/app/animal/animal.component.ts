@@ -40,6 +40,11 @@ export class AnimalComponent implements OnInit {
     });
   }
 
+  //when an onscreen key is pressed then decides if shows the image or not
+  public keyBtnClicked(btn: string):void{
+    this.isPressing = btn==String.fromCharCode(this.charCode);
+  }
+
   //get the equivalent letter to the current charcode
   public getLetter():string{
     return String.fromCharCode(this.charCode);

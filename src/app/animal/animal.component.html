@@ -11,7 +11,56 @@
 		</div>
 	</div>
     <div *ngIf="isPressing">
-        <img [src]="getImage()" height="700px">
+        <img [src]="getImage()" height="500px" (click)="isPressing=false">
         <h3>{{ getAnimalName() }}</h3>
     </div>
+	<div class="keyboard">
+		<div class="key-row">
+		  <div class="key" (click)="keyBtnClicked('1')">1</div>
+		  <div class="key" (click)="keyBtnClicked('2')">2</div>
+		  <div class="key" (click)="keyBtnClicked('3')">3</div>
+		  <div class="key" (click)="keyBtnClicked('4')">4</div>
+		  <div class="key" (click)="keyBtnClicked('5')">5</div>
+		  <div class="key" (click)="keyBtnClicked('6')">6</div>
+		  <div class="key" (click)="keyBtnClicked('7')">7</div>
+		  <div class="key" (click)="keyBtnClicked('8')">8</div>
+		  <div class="key" (click)="keyBtnClicked('9')">9</div>
+		  <div class="key" (click)="keyBtnClicked('0')">0</div>
+		</div>
+	  
+		<div class="key-row">
+		  <div class="key" (click)="keyBtnClicked('Q')">Q</div>
+		  <div class="key" (click)="keyBtnClicked('W')">W</div>
+		  <div class="key" (click)="keyBtnClicked('E')">E</div>
+		  <div class="key" (click)="keyBtnClicked('R')">R</div>
+		  <div class="key" (click)="keyBtnClicked('T')">T</div>
+		  <div class="key" (click)="keyBtnClicked('Y')">Y</div>
+		  <div class="key" (click)="keyBtnClicked('U')">U</div>
+		  <div class="key" (click)="keyBtnClicked('I')">I</div>
+		  <div class="key" (click)="keyBtnClicked('O')">O</div>
+		  <div class="key" (click)="keyBtnClicked('P')">P</div>
+		</div>
+	  
+		<div class="key-row">
+		  <div class="key" (click)="keyBtnClicked('A')">A</div>
+		  <div class="key" (click)="keyBtnClicked('S')">S</div>
+		  <div class="key" (click)="keyBtnClicked('D')">D</div>
+		  <div class="key" (click)="keyBtnClicked('F')">F</div>
+		  <div class="key" (click)="keyBtnClicked('G')">G</div>
+		  <div class="key" (click)="keyBtnClicked('H')">H</div>
+		  <div class="key" (click)="keyBtnClicked('J')">J</div>
+		  <div class="key" (click)="keyBtnClicked('K')">K</div>
+		  <div class="key" (click)="keyBtnClicked('L')">L</div>
+		</div>
+	  
+		<div class="key-row">
+		  <div class="key" (click)="keyBtnClicked('Z')">Z</div>
+		  <div class="key" (click)="keyBtnClicked('X')">X</div>
+		  <div class="key" (click)="keyBtnClicked('C')">C</div>
+		  <div class="key" (click)="keyBtnClicked('V')">V</div>
+		  <div class="key" (click)="keyBtnClicked('B')">B</div>
+		  <div class="key" (click)="keyBtnClicked('N')">N</div>
+		  <div class="key" (click)="keyBtnClicked('M')">M</div>
+		</div>
+	  </div>
 </div>
