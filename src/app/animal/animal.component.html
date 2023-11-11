@@ -1,0 +1,17 @@
+<div class="content">
+	<div *ngIf="!isPressing">
+		<div class="prev" (click)="previous()">
+			<i class="arrow left"></i>
+		</div>
+		<div class="letter">
+			<h1>{{ getLetter() }}</h1>
+		</div>
+		<div class="next" (click)="next()">
+			<i class="arrow right"></i>
+		</div>
+	</div>
+    <div *ngIf="isPressing">
+        <img [src]="getImage()" height="700px">
+        <h3>{{ getAnimalName() }}</h3>
+    </div>
+</div>
